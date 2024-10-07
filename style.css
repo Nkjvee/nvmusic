@@ -297,6 +297,11 @@ iframe {
   .videoblock {
     width: 95%;
   }
+    footer p {
+    font-size: 15px;
+    padding: 0px;
+    line-height: 3px;
+  }
 }
 
 /* Tablet */

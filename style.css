@@ -276,6 +276,12 @@ iframe {
 
   .bottompics {
     height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .bottompics img {
+    vertical-align: top;
   }
 
   .videocontainer {

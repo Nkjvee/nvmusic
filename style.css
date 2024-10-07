@@ -206,6 +206,7 @@ button:hover {
 
 .form {
   flex: 1;
+  max-width: 90%;
 }
 
 .contact-info {
@@ -266,8 +267,10 @@ iframe {
   }
 
   .form {
-    width: 100%;
+    width: 90%;
     text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 
   .contact-info {

@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&family=Patua+One&display=swap");
+
+html,
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(53, 19, 86);
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Patua One", serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+.finalwords {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  width: 75%;
+  margin: 0 auto;
+  line-height: 40px;
+  padding-top: 20px;
+}
+
+.header-image-wrapper {
+  max-width: 30%;
+}
+
+.header-image-wrapper .header-image {
+  padding: 20px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-image: url("headertausta1.jpg");
+  background-color: black;
+}
+
+#millionimg {
+  width: 50%;
+}
+
+nav {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .icon {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav img {
+  max-height: 140px;
+  margin-left: 10px;
+}
+
+nav .menu-items {
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding-inline: 20px;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+nav .menu-items .nav-item a {
+  display: inline-block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  border-style: double;
+  border-color: whitesmoke;
+  background-color: black;
+  text-decoration: none;
+  font-size: clamp(18px, 22px, 25px);
+  font-family: "Permanent Marker", cursive;
+}
+
+nav .menu-items a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* hampurilaismenu hover style */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+footer {
+  color: whitesmoke;
+  font-size: 20px;
+  border-top: black;
+  border-top-style: solid;
+  font-family: "Patua One", serif;
+  font-weight: 400;
+  background-color: rgb(36, 9, 49);
+  padding: 0px 0px 10px;
+  text-align: center;
+}
+
+.menu-items {
+  background-color: transparent;
+}
+
+.content {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.content p {
+  width: 85%;
+  margin: 0 auto;
+  line-height: 35px;
+}
+
+.centered-list {
+  font-size: 20px;
+  font-family: "Patua One", serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.bottompics {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  overflow: hidden;
+}
+
+.bottompics img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Lisätietoa: https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit */
+}
+
+/* Form CSS...*/
+form {
+  width: 40%;
+  line-height: 30px;
+  background-color: rgb(36, 9, 49);
+  margin-left: 25px;
+}
+
+textarea,
+input,
+label {
+  font-size: medium;
+  font-family: "Patua One", serif;
+  width: 60%;
+}
+input {
+  height: 30px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  color: whitesmoke;
+  text-align: center;
+  width: 40%;
+  white-space: nowrap;
+  padding: 10px 12px;
+  border-style: double;
+  border-color: whitesmoke;
+  background-color: black;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Permanent Marker", cursive;
+}
+
+button:hover {
+  color: black;
+  background-color: whitesmoke;
+  border-color: black;
+  border-style: double;
+}
+
+/* ...form CSS */
+
+.container {
+  display: flex; /* Use flexbox to arrange form and text side by side */
+  justify-content: space-between; /* Optional: add space between form and text */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Optional: adjust the gap between the form and the text */
+}
+
+.form {
+  flex: 1;
+}
+
+.contact-info {
+  flex: 1;
+  line-height: 70px;
+  text-align: center;
+}
+
+.videocontainer {
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: space-between; /* Space between videos */
+}
+
+.videoblock {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+  box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+iframe {
+  width: 100%;
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  nav .icon {
+    display: block;
+    background-color: black;
+    border: whitesmoke;
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  nav .menu-items {
+    display: none; /* Hide menu items by default */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav .menu-items.active {
+    display: flex; /* Show menu items when active */
+  }
+
+  nav .menu-items a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  .container {
+    flex-direction: column; /* Stack form and infotext vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .form {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-info {
+    line-height: 1.5;
+  }
+
+  .bottompics {
+    height: auto;
+  }
+
+  .videocontainer {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    justify-content: center; /* Center align the content */
+    align-items: center;
+  }
+
+  .videoblock {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1024px) {
+  .content p {
+    width: 75%;
+    margin: 0 auto;
+    line-height: 35px;
+  }
+
+  .bottompics {
+    display: block;
+  }
+
+  .bottompics img {
+    vertical-align: top;
+  }
+
+  .videoblock {
+    width: 48%; /* Two videos per row on tablets */
+  }
+}
+
+/* Computer */
+@media only screen and (min-width: 1025px) {
+  .content p {
+    width: 65%;
+    margin: 0 auto;
+    line-height: 45px;
+    font-size: 25px;
+  }
+
+  .bottompics img {
+    height: 100%;
+  }
+
+  #millionimg {
+    width: 30%;
+  }
+}

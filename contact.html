@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NV Music Production</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Hampurilaismenu icon library-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="topnav" id="myTopnav">
+        <div class="header-image-wrapper">
+          <img src="nv_logo.png" id="logo" class="header-image" alt="logo" />
+        </div>
+        <ul class="menu-items">
+          <li class="nav-item">
+            <a href="index.html" class="nav-item-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutme.html" class="nav-item-link">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="music.html" class="nav-item-link">Music</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-item-link">Contact</a>
+          </li>
+        </ul>
+        <!--Hampurilaismenu-->
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <div>
+      <h1>Contact</h1>
+
+      <div class="container">
+        <form class="form">
+          <fieldset>
+            <h2>Submit a request for me</h2>
+            <label for="n1">Name:</label><br />
+            <input
+              type="text"
+              id="n1"
+              placeholder="Firstname Lastname"
+            /><br /><br />
+            <label for="em">Email:</label><br />
+            <input
+              type="text"
+              id="em"
+              placeholder="firstname.lastname@example.com"
+            /><br /><br />
+            <label for="phone">Phone:</label><br />
+            <input
+              type="text"
+              id="phone"
+              placeholder="+358501231231"
+            /><br /><br />
+            <label for="info">Other Information:</label><br />
+            <textarea
+              id="info"
+              name="info"
+              placeholder="Additional information.."
+            ></textarea
+            ><br /><br />
+            <!--<input type="submit" id="button" onclick="sayHello()">-->
+            <button type="submit" onclick="reqSubmit()">Submit</button>
+          </fieldset>
+        </form>
+
+        <div class="contact-info">
+          <p>Phone: +35810509368538</p>
+          <p>Email: musicproduction.nv@gmail.com</p>
+          <p>Instagram: @nikkotemple</p>
+          <p>Location: Helsinki</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottompics">
+      <p class="finalwords">
+        Expose your vision and go for it. It just might take you to places
+        beyond your imagination. When I first started playing guitar, the
+        biggest I could dream of was to play just one show. Little did this guy
+        on the left (yours truly) know that one day he’d be touring around the
+        world. That’s the power of will and if you have any, don’t let it go to
+        waste. Remember, even the tiniest spark can turn into flame. Cheers!
+      </p>
+      <img src="live1.jpg" alt="livephoto" />
+    </div>
+
+    <footer>
+      <p>&copy; Niko Vuorela / www.nvmusicprodution.com</p>
+      <p>2024</p>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>

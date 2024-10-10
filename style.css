@@ -68,7 +68,7 @@ nav img {
   margin-left: 10px;
 }
 
-nav .menu-items {
+.menu-items {
   display: flex;
   white-space: nowrap;
   justify-content: space-between;
@@ -261,6 +261,11 @@ iframe {
     color: whitesmoke;
   }
 
+  a.nav-item-link {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .container {
     flex-direction: column; /* Stack form and infotext vertically */
     align-items: center; /* Center items horizontally */
@@ -297,7 +302,8 @@ iframe {
   .videoblock {
     width: 95%;
   }
-    footer p {
+
+  footer p {
     font-size: 15px;
     padding: 0px;
     line-height: 3px;
